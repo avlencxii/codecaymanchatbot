@@ -1,0 +1,239 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp5957944.jpg&f=1&nofb=1&ipt=3c94c7e1fb8ee50fa80c3eda4848f5ccf2517b6c5dc46247bc995796d5e9a55f&ipo=images');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: stretch;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header {
+    background-color: #425369;
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+
+    padding: 20px;
+    border: solid;
+    margin: 5px;
+
+    transition: 0.5s;
+}
+
+header:hover {
+    background-color: white;
+    color: #5e7086;
+    border-color: #8498af;
+    .green1 {
+        color: green;
+    }
+    .blue1 {
+        color: #1b73bb;
+    }
+}
+
+h1 {
+    text-align: left;
+    color: white;
+    font-size: 325%;
+
+    position: relative;
+    top: 5px;
+    left: 13px;
+
+    padding: 5px;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+h1:hover {
+    font-size: 350%;
+    position: relative;
+
+    .green {
+        color: green;
+    }
+    .blue {
+        color: #1b73bb;
+    }
+}
+
+.abt {
+    background-color: #8498af;
+    color: white;
+    text-align: center;
+
+    border: solid;
+    border-color: white;
+    border-radius: 25%;
+
+    float: left;
+    width: 50%;
+    height: 333px;
+    padding: 5px;
+    margin: 5px;
+
+    position: relative;
+    left: 5px;
+
+    transition: 0.5s;
+}
+
+ul {
+    text-align: left;
+}
+
+.abt:hover {
+    background-color: white;
+    color: #5e7086;
+    border-color: #8498af;
+    width: 51%;
+    height: 350px;
+    position: relative;
+    font-size: 105%;
+}
+
+img {
+    border: solid;
+    border-radius: 25%;
+    border-color: white;
+
+    width: 45%;
+    margin: 5px;
+    float: right;
+    
+    position: relative;
+    top: -110px;
+
+    transition: 0.5s;
+}
+
+img:hover {
+    width: 46%;
+    position: relative;
+}
+
+button {
+    color: white;
+    background-color: #8498af;
+
+    border-color: #5e7086;
+    border-radius: 25%;
+    border-width: 25px;
+    outline: solid;
+
+    margin: 5px;
+
+    transition: 0.5s;
+
+    position: relative;
+    left: 375px;
+
+    width: 250px;
+    height: 100px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 110%;
+}
+
+button:hover {
+    color: #5e7086;
+    background-color: white;
+    border-color: #8498af;
+    cursor: pointer;
+
+    width: 260px;
+    height: 115px;
+    position: relative;
+    font-size: 115%;
+}
+
+.intro-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp5957944.jpg&f=1&nofb=1&ipt=5fd45932d3bc81dd09ae2038b2598eb2c69e0649a83f7cf5b9603ccc71f94fa5&ipo=images');
+    background-position: stretch;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+
+.intro-screen h1 {
+    text-align: left;
+    color: white;
+    font-size: 600%;
+    
+    position: relative;
+    top: 150px;
+    left: 13px;
+    
+    padding: 5px;
+    margin: 5px;
+    transition: 0.5s;
+
+    .green2 {
+        color: green;
+    }
+    .blue2 {
+        color: #1b73bb;
+    } 
+}
+    
+.intro-screen h1:hover {    
+    font-size: 650%;
+    position: relative;
+}
+
+.intro-screen button {
+    color: white;
+    background-color: #8498af;
+
+    border-color: #5e7086;
+    border-radius: 25%;
+    border-width: 25px;
+    outline: solid;
+
+    margin: 5px;
+
+    transition: 0.5s;
+
+    position: absolute;
+    left: 42%;
+    bottom: 275px;
+
+    width: 250px;
+    height: 100px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 110%;
+}
+
+.intro-screen button:hover {
+    color: #5e7086;
+    background-color: white;
+    border-color: #8498af;
+    cursor: pointer;
+
+    width: 265px;
+    height: 115px;
+    position: absolute;
+    left:42%;
+    bottom: 275px;
+    font-size: 115%;
+}
+
+.intro-screen.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
